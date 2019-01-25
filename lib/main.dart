@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'favorite.dart';
+import 'tapboxA.dart';
+import 'tapboxB.dart';
 
 void main() => runApp(MyApp());
 
@@ -54,11 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
         /*3*/
-        Icon(
+
+        FavoriteWidget(),
+        /*Icon(
           Icons.star,
           color: Colors.red[500],
         ),
-        Text('41'),
+        Text('41'),*/
       ],
     ),
   );
@@ -104,6 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
           titleSection,
           buttonSelection,
           textSection,
+          SizedBox(
+            height: 16.0,
+          ),
+          TapboxA(),
+          ParentWidget(),
         ],
       ),
     );
