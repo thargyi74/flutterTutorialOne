@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'favorite.dart';
 import 'tapboxA.dart';
 import 'tapboxB.dart';
+import 'tapboxC.dart';
 
 void main() => runApp(MyApp());
 
@@ -114,6 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           TapboxA(),
           ParentWidget(),
+          ParentWidgetTapBoxC(),
         ],
       ),
     );
